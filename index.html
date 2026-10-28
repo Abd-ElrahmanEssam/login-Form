@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسجيل الدخول</title>
+  <!-- خط تجوال لتغيير شكل الخط عن المشروع الأول -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- دوائر إضاءة في الخلفية للتصميم -->
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+
+  <main class="login-container">
+    <div class="login-header">
+      <div class="avatar-icon">🔒</div>
+      <h1>تسجيل الدخول</h1>
+      <p>أدخل بيانات حسابك للمتابعة</p>
+    </div>
+
+    <form class="login-form" onsubmit="event.preventDefault(); alert('تم تسجيل الدخول بنجاح!');">
+      
+      <!-- البريد الإلكتروني -->
+      <div class="input-group">
+        <label for="email">البريد الإلكتروني</label>
+        <div class="input-wrapper">
+          <span class="input-icon">✉️</span>
+          <input 
+            type="email" 
+            id="email" 
+            placeholder="name@example.com" 
+            required 
+          />
+        </div>
+      </div>
+
+      <!-- كلمة المرور -->
+      <div class="input-group">
+        <label for="password">كلمة المرور</label>
+        <div class="input-wrapper">
+          <span class="input-icon">🔑</span>
+          <input 
+            type="password" 
+            id="password" 
+            placeholder="أدخل 6 أحرف على الأقل" 
+            minlength="6" 
+            required 
+          />
+        </div>
+      </div>
+
+      <!-- خيارات إضافية -->
+      <div class="form-actions">
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          <span>حفظ بيانات الدخول</span>
+        </label>
+        <a href="#" class="forgot-link">نسيت كلمة السر؟</a>
+      </div>
+
+      <!-- زر الدخول -->
+      <button type="submit" class="submit-btn">دخول إلى الحساب</button>
+
+    </form>
+
+    <div class="separator">
+      <span>أو سجل عبر</span>
+    </div>
+
+    <div class="social-buttons">
+      <button type="button" class="social-btn">Google</button>
+      <button type="button" class="social-btn">Apple</button>
+    </div>
+
+    <p class="signup-text">
+      مستخدم جديد؟ <a href="#">افتح حساباً مجانياً</a>
+    </p>
+  </main>
+
+</body>
+</html>
